@@ -1,0 +1,24 @@
+---
+import  SpeedInsights  from "@vercel/speed-insights/astro"
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Leo Ascenzi</title>
+</head>
+<body>
+    <SpeedInsights/>
+    <div>
+    <Header/>
+    <article>
+        <slot/>
+    </article>
+    <Footer/>
+    </div>
+</body>
+</html>
