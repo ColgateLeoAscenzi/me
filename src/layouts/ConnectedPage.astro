@@ -8,17 +8,41 @@ import Footer from "../components/Footer.astro";
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
     <meta name="generator" content={Astro.generator} />
     <title>Leo Ascenzi</title>
 </head>
-<body>
+<body class="grid justify-items-center">
     <SpeedInsights/>
-    <div>
-    <Header/>
-    <article>
-        <slot/>
-    </article>
-    <Footer/>
+    <div class="grid w-full justify-items-center">
+        <Header/>
+        <article class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 max-w-full mx-4 md:mx-8 md:max-w-[700px] lg:max-w-[800px] xl:min-w-[1000px]">
+            <slot/>
+        </article>
+        <Footer/>
     </div>
 </body>
 </html>
+
+<style is:global>
+    a {
+        word-break: break-all;
+        color: mediumpurple;
+    }
+
+    h1 {
+        font-weight: 800;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+</style>
