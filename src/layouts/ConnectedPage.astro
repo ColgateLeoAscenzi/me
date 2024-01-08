@@ -12,11 +12,11 @@ import Footer from "../components/Footer.astro";
     <meta name="generator" content={Astro.generator} />
     <title>Leo Ascenzi</title>
 </head>
-<body class="grid justify-items-center">
+<body class="grid justify-items-center bg-slate-50">
     <SpeedInsights/>
     <div class="grid w-full justify-items-center">
         <Header/>
-        <article class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 max-w-full mx-4 md:mx-8 md:max-w-[700px] lg:max-w-[800px] xl:min-w-[1000px]">
+        <article class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 mx-4 md:mx-8 max-w-full md:max-w-[736px] lg:max-w-[800px] xl:min-w-[1000px]">
             <slot/>
         </article>
         <Footer/>
