@@ -2,6 +2,7 @@
 import  SpeedInsights  from "@vercel/speed-insights/astro"
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+const { title } = Astro.props;
 ---
 <html>
 <head>
@@ -9,6 +10,7 @@ import Footer from "../components/Footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <meta name="generator" content={Astro.generator} />
     <title>Leo Ascenzi</title>
 </head>
@@ -16,6 +18,7 @@ import Footer from "../components/Footer.astro";
     <SpeedInsights/>
     <div class="grid w-full justify-items-center">
         <Header/>
+        <h1>{title}</h1>
         <article class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 mx-4 md:mx-8 max-w-full md:max-w-[736px] lg:max-w-[800px] xl:min-w-[1000px]">
             <slot/>
         </article>
