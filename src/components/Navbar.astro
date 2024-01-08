@@ -1,15 +1,48 @@
 ---
 
 ---
-<div class="grid grid-cols-2 content-center">
+<!--Desktop navbar-->
+<div class="w-full my-4 hidden md:grid grid-cols-2 content-center fixed">
     <div>
-        <a class="grid min-h-full content-center max-w-50" href="/"><h2 class="hfull mx-6 text-sm md:text-lg" >LEO ASCENZI</h2></a>
+        <a class="grid min-h-full content-center max-w-50" href="/"><h2 class="hfull mx-6 text-sm md:text-lg lg:text-xl" >LEO ASCENZI</h2></a>
     </div>
     <div class="grid w-full justify-end">
         <div class="grid grid-cols-3 max-w-80 align-items-end">
-            <a class="grid mx-2 text-center content-center text-black" href="/projects">PROJECTS</a>
-            <a class="grid mx-2 text-center content-center text-black" href="/resume">RESUME</a>
-            <a class="grid mx-2 text-center content-center text-black" href="/photos">PHOTOS</a>
+            <a class="grid mx-2 text-center content-center text-black text-xs md:text-md" href="/projects">PROJECTS</a>
+            <a class="grid mx-2 text-center content-center text-black text-xs md:text-md" href="/resume">RESUME</a>
+            <a class="grid mx-2 text-center content-center text-black text-xs md:text-md" href="/photos">PHOTOS</a>
         </div>
     </div>
 </div>
+
+<!--Mobile navbar-->
+<div class="w-full h-14 grid grid-cols-2 md:hidden justify-end fixed bg-slate-50">
+    <div>
+        <a class="grid min-h-full content-center" href="/"><h2 class="hfull mx-6 text-lg" >LEO ASCENZI</h2></a>
+    </div>
+    <button id="navButton" class="mx-6 my-2 max-w-6 justify-self-end"><i class="fas fa-xl fa-bars"></i></button>
+</div>
+<div id="navDropdown" class="hidden grid-rows-1 items-center min-w-full min-h-[100vh] bg-slate-50 z-[1] top-14 fixed">
+    <div class="grid-rows-3 justify-center mt-[-128px]">
+        <a class="grid my-2 text-center content-center text-purple-500 text-lg font-bold" href="/projects">PROJECTS</a>
+        <a class="grid my-2 text-center content-center text-purple-500 text-lg font-bold" href="/resume">RESUME</a>
+        <a class="grid my-2 text-center content-center text-purple-500 text-lg font-bold" href="/photos">PHOTOS</a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('navButton').addEventListener('click', function() {
+        let navButton = document.getElementById('navButton');
+        navButton.innerHTML =  navButton.innerHTML == "<i class=\"fas fa-xl fa-xmark\"></i>" ?  "<i class=\"fas fa-xl fa-bars\"></i>" : "<i class=\"fas fa-xl fa-xmark\"></i>";
+
+        let navDropdown = document.getElementById('navDropdown');
+        if(navDropdown.classList.contains("hidden")){
+            navDropdown.classList.remove("hidden");
+            navDropdown.classList.add("grid");
+        }
+        else {
+            navDropdown.classList.add("hidden");
+            navDropdown.classList.remove("grid");
+        }
+    });
+</script>
