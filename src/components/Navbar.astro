@@ -4,13 +4,14 @@
 <!--Desktop navbar-->
 <div class="w-full my-4 hidden md:grid grid-cols-2 content-center fixed">
     <div>
-        <a class="grid min-h-full content-center max-w-50" href="/"><h2 class="hfull mx-6 text-sm md:text-lg lg:text-xl" >LEO ASCENZI</h2></a>
+        <a class="grid min-h-full content-center max-w-50" href="/"><h2 class="hfull mx-8 text-sm md:text-lg lg:text-xl" >LEO ASCENZI</h2></a>
     </div>
     <div class="grid w-full justify-end">
-        <div class="grid grid-cols-3 max-w-80 align-items-end">
-            <a class="grid mx-2 text-center content-center text-black text-xs md:text-md" href="/projects">PROJECTS</a>
-            <a class="grid mx-2 text-center content-center text-black text-xs md:text-md" href="/resume">RESUME</a>
-            <a class="grid mx-2 text-center content-center text-black text-xs md:text-md" href="/photos">PHOTOS</a>
+        <div class="grid grid-cols-4 max-w-80 mx-8 align-items-end">
+            <a class="grid px-2 text-center content-center text-black text-xs md:text-md" href="/">ABOUT</a>
+            <a class="grid px-2 text-center content-center text-black text-xs md:text-md" href="/projects">PROJECTS</a>
+            <a class="grid px-2 text-center content-center text-black text-xs md:text-md" href="/resume">RESUME</a>
+            <a class="grid px-2 text-center content-center text-black text-xs md:text-md" href="/photos">PHOTOS</a>
         </div>
     </div>
 </div>
@@ -18,15 +19,16 @@
 <!--Mobile navbar-->
 <div class="w-full h-14 grid grid-cols-2 md:hidden justify-end fixed bg-slate-50">
     <div>
-        <a class="grid min-h-full content-center" href="/"><h2 class="hfull mx-6 text-lg" >LEO ASCENZI</h2></a>
+        <a class="grid min-h-full content-center" href="/"><h2 class="hfull mx-8 text-lg" >LEO ASCENZI</h2></a>
     </div>
-    <button id="navButton" class="mx-6 my-2 max-w-6 justify-self-end"><i class="fas fa-xl fa-bars"></i></button>
+    <button id="navButton" class="mx-8 my-2 max-w-6 justify-self-end"><i class="fas fa-xl fa-bars"></i></button>
 </div>
 <div id="navDropdown" class="hidden grid-rows-1 items-center min-w-full min-h-[100vh] bg-slate-50 z-[1] top-14 fixed">
-    <div class="grid-rows-3 justify-center mt-[-128px]">
-        <a class="grid my-2 text-center content-center text-purple-500 text-lg font-bold" href="/projects">PROJECTS</a>
-        <a class="grid my-2 text-center content-center text-purple-500 text-lg font-bold" href="/resume">RESUME</a>
-        <a class="grid my-2 text-center content-center text-purple-500 text-lg font-bold" href="/photos">PHOTOS</a>
+    <div id="navDropdownContent" class="grid grid-rows-3 justify-center mt-[-128px] opacity-0 transition-opacity transition-delay-[1000]">
+        <a class="grid py-2 text-center content-center text-purple-500 text-lg font-bold" href="/">ABOUT</a>
+        <a class="grid py-2 text-center content-center text-purple-500 text-lg font-bold" href="/projects">PROJECTS</a>
+        <a class="grid py-2 text-center content-center text-purple-500 text-lg font-bold" href="/resume">RESUME</a>
+        <a class="grid py-2 text-center content-center text-purple-500 text-lg font-bold" href="/photos">PHOTOS</a>
     </div>
 </div>
 
