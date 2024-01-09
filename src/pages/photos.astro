@@ -1,20 +1,19 @@
 ---
 import ConnectedPage from "../layouts/ConnectedPage.astro";
+import {imageData} from "../data/photos_pagedata"
 ---
+
 <ConnectedPage title="Photos">
     <div class="grid col-span-full">
-        Look at some of the things I like to take pictures of!
+        Look at some of the things I like to take pictures of! Click on them to view the full post on Instagram if you want more!
         <br>
-        <div class="grid md:grid-cols-3 md:grid-rows-3">
-            <div><img src="https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/412415914_3601299833447626_5310746497691766095_n.heic?stp=dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=wh9B6fOPDvsAX8ISh5b&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANQ71j8EAAAA&oh=00_AfCWYqwDHjyEk4Aaru3A_adBeksU-lOzVkrf-DOAla8egQ&oe=65A1243B"></img></div>
-            <div><img src="https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/412415914_3601299833447626_5310746497691766095_n.heic?stp=dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=wh9B6fOPDvsAX8ISh5b&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANQ71j8EAAAA&oh=00_AfCWYqwDHjyEk4Aaru3A_adBeksU-lOzVkrf-DOAla8egQ&oe=65A1243B"></img></div>
-            <div><img src="https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/412415914_3601299833447626_5310746497691766095_n.heic?stp=dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=wh9B6fOPDvsAX8ISh5b&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANQ71j8EAAAA&oh=00_AfCWYqwDHjyEk4Aaru3A_adBeksU-lOzVkrf-DOAla8egQ&oe=65A1243B"></img></div>
-            <div><img src="https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/412415914_3601299833447626_5310746497691766095_n.heic?stp=dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=wh9B6fOPDvsAX8ISh5b&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANQ71j8EAAAA&oh=00_AfCWYqwDHjyEk4Aaru3A_adBeksU-lOzVkrf-DOAla8egQ&oe=65A1243B"></img></div>
-            <div><img src="https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/412415914_3601299833447626_5310746497691766095_n.heic?stp=dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=wh9B6fOPDvsAX8ISh5b&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANQ71j8EAAAA&oh=00_AfCWYqwDHjyEk4Aaru3A_adBeksU-lOzVkrf-DOAla8egQ&oe=65A1243B"></img></div>
-            <div><img src="https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/412415914_3601299833447626_5310746497691766095_n.heic?stp=dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=wh9B6fOPDvsAX8ISh5b&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANQ71j8EAAAA&oh=00_AfCWYqwDHjyEk4Aaru3A_adBeksU-lOzVkrf-DOAla8egQ&oe=65A1243B"></img></div>
-            <div><img src="https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/412415914_3601299833447626_5310746497691766095_n.heic?stp=dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=wh9B6fOPDvsAX8ISh5b&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANQ71j8EAAAA&oh=00_AfCWYqwDHjyEk4Aaru3A_adBeksU-lOzVkrf-DOAla8egQ&oe=65A1243B"></img></div>
-            <div><img src="https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/412415914_3601299833447626_5310746497691766095_n.heic?stp=dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=wh9B6fOPDvsAX8ISh5b&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANQ71j8EAAAA&oh=00_AfCWYqwDHjyEk4Aaru3A_adBeksU-lOzVkrf-DOAla8egQ&oe=65A1243B"></img></div>
-            <div><img src="https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/412415914_3601299833447626_5310746497691766095_n.heic?stp=dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=wh9B6fOPDvsAX8ISh5b&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANQ71j8EAAAA&oh=00_AfCWYqwDHjyEk4Aaru3A_adBeksU-lOzVkrf-DOAla8egQ&oe=65A1243B"></img></div>
+        <br>
+        <div class="grid gap-4 md:grid-cols-3 md:grid-rows-3">
+            {imageData.map(({imageURL, postLink, alt}) => {
+                return (
+                    <div><a href={postLink}><img src={imageURL} alt={alt}/></a></div>
+                )
+            })}
         </div>
     </div>
 </ConnectedPage>
