@@ -1,13 +1,22 @@
 ---
 import ConnectedPage from "../layouts/ConnectedPage.astro";
+import ResumeInfoBox from "../components/resume/ResumeInfoBox.astro";
+import { educationData } from "../data/resume_pagedata"
+
+import { experienceData } from "../data/resume_pagedata"
+
 ---
-<ConnectedPage title="Resume">
-    <div class="grid col-span-full">
-        Resume goes here
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>long page
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>hi hi
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>keep scrolling
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>wow it keeps going
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>this is the end
+<ConnectedPage title="Resume - WIP">
+    <h2 class="mt-4 text-xl">Education</h2>
+    <div class="grid col-span-full my-3">
+        {educationData.map((props) => {
+            return (<ResumeInfoBox {...props}/>);
+        })}
+    </div>
+    <h2 class="text-xl">Experience</h2>
+    <div class="grid col-span-full my-3">
+        {experienceData.map((props) => {
+            return (<ResumeInfoBox {...props}/>);
+        })}
     </div>
 </ConnectedPage>

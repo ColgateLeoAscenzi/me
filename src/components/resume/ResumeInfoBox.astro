@@ -1,0 +1,25 @@
+---
+const { title, subtitle, dates, location, description, image, imageLink } = Astro.props;
+---
+<div class="grid border-purple-400 border-2 rounded-lg p-2 md:p-6 my-2">
+    <div class="grid grid-cols-12 items-center content-center pb-6">
+        <div class="grid justify-center w-[48px] lg:w-[48px] xl:w-[64px]"><a href={imageLink}><img src={image} alt={`image icon of ${title}`} class="rounded-full"></img></a></div>
+        <div class="grid col-start-3 md:col-start-2 col-span-5">
+            <div class="grid text-[1rem] font-bold">{title}</div>
+            <div class="grid text-[0.875rem]">{subtitle}</div>
+        </div>
+        <div class="grid col-start-8 md:col-start-10 col-span-5 md:col-span-3 justify-end text-right">
+            <div class="grid text-[1rem] font-medium">{dates}</div>
+            <div class="grid text-[0.875rem] justify-end">{location}</div>
+        </div>
+    </div>
+    <div class="grid">
+        <ul>
+            {description.map((content) => {
+                return (
+                    <li class="list-disc ml-4 text-[1rem]">{content}</li>
+                )
+            })}
+        </ul>
+    </div>
+</div>
