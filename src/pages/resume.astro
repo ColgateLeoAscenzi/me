@@ -2,12 +2,13 @@
 import ConnectedPage from "../layouts/ConnectedPage.astro";
 import ResumeInfoBox from "../components/resume/ResumeInfoBox.astro";
 import { educationData } from "../data/resume_pagedata"
-
 import { experienceData } from "../data/resume_pagedata"
-
 ---
 <ConnectedPage title="Resume - WIP">
-    <h2 class="mt-4 text-xl">Education</h2>
+    <div class="grid col-span-full grid-cols-2 items-center">
+        <h2 class="mt-4 text-xl">Education</h2>
+        <div class="grid col-start-2 justify-self-end bg-violet-400 rounded-md px-4 h-10 items-center"><a class="text-center text-white font-medium text-sm" href="/public/resume.pdf">VIEW PDF</a></div>
+    </div>
     <div class="grid col-span-full my-3">
         {educationData.map((props) => {
             return (<ResumeInfoBox {...props}/>);
