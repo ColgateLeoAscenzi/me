@@ -1,14 +1,14 @@
 ---
 const { title, description, image, imageLink, tags } = Astro.props;
 ---
-<div class="grid p-2 border-2 border-purple-400 rounded-lg">
-    <a href={imageLink}><img class="rounded-xl" src={image} alt={title}></img></a>
-    <div class="font-bold">{title}</div>
-    <div>{description}</div>
-    <div class=`grid grid-cols-${tags.length}`>
+<div class="grid p-4 justify-items-center">
+    <a class="mb-2" href={imageLink}><img class="rounded-xl" src={image} alt={title}></img></a>
+    <div class="text-lg font-bold text-center">{title}</div>
+    <div class="text-md text-center">{description}</div>
+    <div class=`grid grid-cols-${tags.length} justify-items-center`>
         {tags.map((content) => {
             return (
-                <div class="text-sm text-center text-green-700">{content}</div>
+                <div class="text-sm text-white bg-violet-400 px-2 m-1 max-w-fit rounded-sm">{content}</div>
             )
         })}
     </div>
