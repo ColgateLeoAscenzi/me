@@ -8,10 +8,10 @@ import {imageData} from "../data/photos_pagedata"
         Look at some of the things I like to take pictures of! Click on them to view the full post on Instagram if you want more!
         <br>
         <br>
-        <div class="grid gap-4 md:grid-cols-3 md:grid-rows-3">
+        <div class="grid gap-6 md:grid-cols-3 md:grid-rows-3">
             {imageData.map(({imageURL, postLink, alt}) => {
                 return (
-                    <div><a href={postLink}><img src={imageURL} alt={alt}/></a></div>
+                    <div><a href={postLink}><img class="rounded-lg md:rounded-none shadow-lg md:shadow-none" src={imageURL} alt={alt}/></a></div>
                 )
             })}
         </div>
