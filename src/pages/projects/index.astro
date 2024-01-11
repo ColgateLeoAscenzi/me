@@ -1,0 +1,13 @@
+---
+import ConnectedPage from "../../layouts/ConnectedPage.astro";
+import {workProjectsData} from "../../data/projects_pagedata";
+import ProjectInfoCard from "../../components/projects/ProjectInfoCard.astro";
+---
+<ConnectedPage title="Projects - WIP">
+    <div class="grid col-span-full">
+        <h2 class="mb-4">Work Projects</h2>
+        {workProjectsData.map((props) => {
+            return (<ProjectInfoCard {...props}/>)
+        })}
+    </div>
+</ConnectedPage>
