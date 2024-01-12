@@ -6,13 +6,13 @@ import ProjectInfoCard from "../../components/projects/ProjectInfoCard.astro";
 <ConnectedPage title="Projects - WIP">
     <div class="grid col-span-full">
         <h2 class="mt-4 text-xl">Work Projects</h2>
-        <div class="grid col-span-full my-3">
+        <div class="grid col-span-full my-3 md:grid-cols-2">
             {workProjectsData.map((props) => {
                 return (<ProjectInfoCard {...props}/>)
             })}
         </div>
         <h2 class="text-xl">Personal Projects</h2>
-        <div class="grid col-span-full my-3">
+        <div class="grid col-span-full my-3 md:grid-cols-2">
             {personalProjectsData.map((props) => {
                 return (<ProjectInfoCard {...props}/>)
             })}

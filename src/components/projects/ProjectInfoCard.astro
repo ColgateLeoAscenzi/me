@@ -1,7 +1,7 @@
 ---
 const { title, description, image, imageLink, tags } = Astro.props;
 ---
-<div class="grid p-4 justify-items-center">
+<div class="grid p-4 justify-items-center md:grid-span-1">
     <a class="mb-2" href={imageLink}><img class="rounded-xl" src={image} alt={title}></img></a>
     <div class="text-lg font-bold text-center">{title}</div>
     <div class="text-md text-center">{description}</div>
