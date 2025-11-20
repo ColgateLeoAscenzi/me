@@ -2,25 +2,25 @@ export const imageData = [
     // Row 1
     {
         imageURL: "/featured-photos/featured-photo-1.jpg",
-        postLink: "",
+        postLink: "https://www.instagram.com/p/DIeaOhqgvMk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
         alt: "Adventure to NYC with Kairui Miao"
     },
     {
         imageURL: "featured-photos/featured-photo-2.jpg",
-        postLink: "",
-        alt: ""
+        postLink: "https://www.instagram.com/p/DG6WuziSsBT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        alt: "Me doing a handstand on a rock in Acadia National Park"
     },
     {
         imageURL: "featured-photos/featured-photo-3.jpg",
         postLink: "",
-        alt: ""
+        alt: "A flower close-up in Vancouver, Canada"
     },
 
     // Row 2
     {
         imageURL: "featured-photos/featured-photo-4.jpg",
         postLink: "",
-        alt: ""
+        alt: "Me standing atop a rock in Arcadia National Park"
     },
     {
         imageURL: "featured-photos/featured-photo-5.jpg",
