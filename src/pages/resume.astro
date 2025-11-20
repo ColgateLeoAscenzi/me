@@ -1,8 +1,9 @@
 ---
 import ConnectedPage from "../layouts/ConnectedPage.astro";
 import ResumeInfoBox from "../components/resume/ResumeInfoBox.astro";
-import { educationData } from "../data/resume_pagedata"
-import { experienceData } from "../data/resume_pagedata"
+const education = Object.values(import.meta.glob('./education/**.md', { eager: true }));
+const experiences = Object.values(import.meta.glob('./resume/**.md', { eager: true }));
+
 ---
 <ConnectedPage title="Resume - WIP">
     <div class="grid col-span-full grid-cols-2 items-center">
@@ -10,14 +11,30 @@ import { experienceData } from "../data/resume_pagedata"
         <div class="grid col-start-2 justify-self-end bg-violet-400 rounded-md px-4 h-10 items-center"><a class="text-center text-white font-medium text-sm" href="/resume.pdf">VIEW PDF</a></div>
     </div>
     <div class="grid col-span-full my-3">
-        {educationData.map((props) => {
-            return (<ResumeInfoBox {...props}/>);
-        })}
+        {education.map(job => 
+            <ResumeInfoBox 
+                company={job.frontmatter.company} 
+                job_title={job.frontmatter.job_title} 
+                dates={job.frontmatter.dates} 
+                location={job.frontmatter.location} 
+                description={job.compiledContent()} 
+                image={job.frontmatter.image} 
+                imageLink={job.frontmatter.imageLink}
+            />
+        )}
     </div>
     <h2 class="text-xl">Experience</h2>
     <div class="grid col-span-full my-3">
-        {experienceData.map((props) => {
-            return (<ResumeInfoBox {...props}/>);
-        })}
+        {experiences.map(job => 
+            <ResumeInfoBox 
+                company={job.frontmatter.company} 
+                job_title={job.frontmatter.job_title} 
+                dates={job.frontmatter.dates} 
+                location={job.frontmatter.location} 
+                description={job.compiledContent()} 
+                image={job.frontmatter.image} 
+                imageLink={job.frontmatter.imageLink}
+            />
+        )}
     </div>
 </ConnectedPage>
