@@ -1,10 +1,11 @@
 ---
 import ConnectedPage from "../../layouts/ConnectedPage.astro";
+import Construction from "../../components/Construction.astro";
 import {personalProjectsData, workProjectsData} from "../../data/projects_pagedata";
 import ProjectInfoCard from "../../components/projects/ProjectInfoCard.astro";
 ---
 <ConnectedPage title="Projects - WIP">
-    <div class="grid col-span-full">
+    <div class="grid col-span-full overflow-hidden">
         <h2 class="mt-4 text-xl">Work Projects</h2>
         <div class="grid col-span-full my-3 md:grid-cols-2">
             {workProjectsData.map((props) => {
@@ -18,4 +19,5 @@ import ProjectInfoCard from "../../components/projects/ProjectInfoCard.astro";
             })}
         </div>
     </div>
+    <Construction/>
 </ConnectedPage>
