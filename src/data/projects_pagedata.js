@@ -31,10 +31,10 @@ export const workProjectsData = [
 
 export const personalProjectsData = [
     {
-        title: "Clipcut",
+        title: "CapCurate",
         description: "AI Powered Video Clip Finder",
         image: "/project-resources/raider-rumble/raider-rumble-project-cover.png",
-        imageLink: "/projects/clipcut",
+        imageLink: "/projects/cap-curate",
         tags: ["Python", "Firebase", "Llama CPP"]
     },
     {

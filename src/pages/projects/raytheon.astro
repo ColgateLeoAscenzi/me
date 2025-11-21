@@ -5,7 +5,38 @@ import ConnectedPage from "../../layouts/ConnectedPage.astro";
 <ConnectedPage title="Projects > Raytheon">
     <div class="grid col-span-full">
         <img src="https://prd-sc102-cdn.rtx.com/-/media/rtx/news-images/2020/10/13/gtf-engine-making-history-now-and-in-the-future/gtf_worker_engine.png?w=1440&rev=aa3150621b2349a8afe782feb12b269f&hash=6B972002E9387B1C13F782F9CCD9160B" alt="Raytheon image"></img>
-        <br>
-        <div>Worked on stuff built APIs</div>
+        <br/>
+        <div class="pt-2">
+            As a software engineer contracted to Raytheon, I work as part of an agile team within a larger ART that
+            practices SAFe methodology. The ART as a whole maintains many PLM tools, with a major focus on a custom
+            implement of Windchill PDM. My team focuses maintaining parts of Windchill relating to customer deliverable,
+            technical data packages. Windchill itself is a large Java SpringBoot app with a JSP frontend meant for managing
+            data throughout its lifecycle; including revisions, approvals, release.
+            <div class="pt-2">
+            While working on this project I've had a hand in touching everything from Jenkins pipelines, to our custom selenium 
+            implementation, to creating tables that combine and merge many data sources for efficient consumption by the end users.
+            One of my major contributions was architecting and implementing a SpringBoot based PDF merging and conversion solution
+            that replaced an Adobe product saving hundreds of thousands of dollars in licensing fees annually. My solution handles
+            converting many types of file formats, from office files to CAD drawings, into PDFs and then combining them into reports
+            to deliver back to Windchill depending on the type of request. The documents are also dynamically watermarked with EXIM/ITAR
+            information depending on the security classification of the specific data. As the Team Lead for this project, I first conducted
+            a security investigation to ensure the libraries used were compliant with Raytheon's security policies, then I created features
+            and stories for my teammates to work and assisted them in development and code review. I also handled the core development
+            to ensure the solution was cohesive and scalable as people built out the various components.
+            </div>
+            <div class="pt-2">
+            To prove to the business that this solution was as reliable, or better, than the Adobe product we were replacing, I created
+            end to end robustness tests which ran with  both a high load and variability of production data. I then presented a report
+            to the stakeholders demonstrating readiness of our application. After it's deployment and proven success, we were later able
+            to provide this solution to our many Closed Area labs. Since engineers on these sites cannot use phones or otherwise have any
+            outside internet access, they normally rely on hundred-page, physical installation documents during upgrades or deployments.
+            If they run into issues with Windchill or other connected apps, they have to remember error messages, steps taken, etc, 
+            and then report back to our ART for assitance. As part of my innovation, I replaced many install steps of our app with scripts, 
+            reducing documentation, human error, and decreasing installation time from hours to 10 minutes.
+            </div>
+            <div class="pt-2">
+            As part of
+            </div>
+        </div>
     </div>
 </ConnectedPage>
