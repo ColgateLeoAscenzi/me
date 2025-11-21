@@ -5,7 +5,26 @@ import ConnectedPage from "../../layouts/ConnectedPage.astro";
 <ConnectedPage title="Projects > Raider Rumble">
     <div class="grid col-span-full">
         <img src="/project-resources/raider-rumble/raider-rumble-project-cover.png" alt="Raider Rumble image"></img>
-        <br>
-        <div>Worked on stuff built game engine in Javascript and rendered using ThreeJS</div>
+        <br/>
+        <div class="pt-2">
+            <span text-bold>Raider Rumble</span> is a Super Smash Brothers inspired 2.5D fighting game created as
+            a final project for <a href="https://cs.colgate.edu/~efourquet/cosc435/gallery/final_project.html">Elodie
+            Fourquet's COSC 435 class</a> at Colgate University. The game features 3 fun to play characters with unique,
+            attack styles. Including:
+            <ul class="list-disc list-inside">
+                <li><b>Colgate Raider:</b> Colgate's mascot, who swaps between weilding a Slices or Fojo Beans token.</li>
+                <li><b>Pingu:</b> A valient sword wielding Penguin from TFT.</li>
+                <li><b>Anh Nguyen:</b> A Vietnamese guy who can sleep anywhere.</li>
+        </div>
+        <div class="pt-2">The game was built in Javascript using the THREE.js library with a custom game engine that supports
+            the quick addition of new maps and characters. My primary contribution to this project was designing this engine
+            and implementing the game loop, logic, collisions, physics, attack types, knockback, damage collisions and more.
+            For the collision, I used raycasting to detect nearby blocks, and for attacks I used hitboxes based off the player
+            meshes. When playing, you can draw hitboxes on screen by pressing 'H'!
+            <div class="grid col-span-full md:grid-cols-8 grid-cols-4">
+                <a class="md:col-start-3 md:col-span-2 text-center col-start-1 col-span-2" href="https://colgateleoascenzi.github.io/RaiderRumbleGame/">Play the Game</a>
+                <a class="md:col-start-5 md:col-span-2 text-center col-start-3 col-span-2" href="https://github.com/ColgateLeoAscenzi/RaiderRumbleGame">View the Code</a>
+            </div>
+        </div>
     </div>
 </ConnectedPage>
