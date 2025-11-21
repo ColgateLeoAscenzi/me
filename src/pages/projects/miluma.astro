@@ -1,0 +1,38 @@
+---
+import ConnectedPage from "../../layouts/ConnectedPage.astro";
+
+---
+<ConnectedPage title="Projects > MiLuma">
+    <div class="grid col-span-full">
+        <img src="/project-resources/contract-ai/contract-ai-project-cover.png" alt="LUMA image"></img>
+        <br>
+        <div class="grid">
+            <div class="pt-2">
+            MiLuma is a payment, energy usage, and outage tracking portal for Puerto Rico's energy company, LUMA. It handles
+            accounts for millions of residential and commercial users across the island, ensuring they can view and pay
+            their bills, and submit various types of inquiries to the support team for help.
+            <div/>
+            <div class="pt-2">
+            The web application is written in React and paired with a dockerized, microservice based Java Springboot backend 
+            and Postgre DB. It also integrates with an external legacy database handed off by the previous power company 
+            during the transition. My role in development was to create the email microservice used for various 
+            functions across the app. I designed it to support both text and email based 2FA for the login and registration 
+            flows, as well as for sending inquiry forms to support representatives and payment confirmations for customers. 
+            <div/>
+            <div class="pt-2">
+            In tandem with my work on the microservices, I implemented the entire onboarding and login flow making, integrating
+            it with the authentication service. I also created reusable Formik based templates to support the many types of
+            inquiries a user could submit and allow for the addition of more in the future. While designing the UI, we made
+            sure to adhere to accessibility requirements, as the portal needs to be easily navigable by every resident, younger
+            or older. 
+            </div>
+            <div class="pt-2">
+            On the administrator side of things, I set up all my endpoints to work with Swagger UI for easier testing and
+            integrated DataDog into pages to track user flows and quickly identify problems. The previous company in charge
+            had many issue with outages, so we placed and great emphasis on making sure the product was robustly tested, 
+            but also easy to diagnose when issues arose.
+            </div>
+            <a class="grid pt-2 col-span-full text-center" href="https://miluma.lumapr.com/login">Visit the Site</a>
+        </div>
+    </div>
+</ConnectedPage>

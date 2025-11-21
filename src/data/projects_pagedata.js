@@ -16,13 +16,13 @@ export const workProjectsData = [
     {
         title: "Joulebug",
         description: "Gamified ESG Application",
-        image: "/project-resources/contract-ai/contract-ai-project-cover.png",
+        image: "https://dashboard.joulebug.com/static/media/app-mockup.6f2883e2.png",
         imageLink: "/projects/joulebug",
         tags: ["React", "React Native"]
     },
     {
         title: "MiLuma",
-        description: "Puerto Rico Energy Dashboard",
+        description: "Puerto Rico Energy Portal",
         image: "/project-resources/contract-ai/contract-ai-project-cover.png",
         imageLink: "/projects/miluma",
         tags: ["React", "Java", "SpringBoot"]

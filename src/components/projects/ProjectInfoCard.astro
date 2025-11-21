@@ -1,4 +1,5 @@
 ---
+import Tag from "../tag.astro";
 const { title, description, image, imageLink, tags } = Astro.props;
 ---
 <div class="grid p-4 justify-items-center md:grid-span-1">
@@ -8,7 +9,7 @@ const { title, description, image, imageLink, tags } = Astro.props;
     <div class=`grid grid-cols-${tags.length} justify-items-center`>
         {tags.map((content) => {
             return (
-                <div class="text-sm text-white bg-violet-400 px-2 m-1 max-w-fit rounded-sm">{content}</div>
+                <Tag tagname={content} />
             )
         })}
     </div>

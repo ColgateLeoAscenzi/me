@@ -1,0 +1,29 @@
+---
+import ConnectedPage from "../../layouts/ConnectedPage.astro";
+
+---
+<ConnectedPage title="Projects > CapCurate">
+    <div class="grid col-span-full">
+        <img src="/project-resources/contract-ai/contract-ai-project-cover.png" alt="CapCurate image"></img>
+        <br>
+        <div class="grid">
+            <div class="pt-2">
+            CapCurate is an LLM based video curation app designed to assist content creators or hobbiests 
+            select videos from their libraries which pertain to a topic or video idea. The inspiration came from
+            my wife after we got back from our trip to Korea and she wanted to make a travel vlog. The issue was
+            we had hundreds of short clips and are busy with life in general. To use this tool, simply drop your
+            videos in a directory (in the future connect with Google Photos), enter your video idea, and then press
+            "Curate!". The end result is a smaller subset of videos you can use in your project.
+            <div/>
+            <div class="pt-2">
+            The backend is written in python and uses FFMPEG to extract frames from the video for analysis. It uses
+            OpenAIs, Whisper, to parse audio from the video, and then uses an LLM to check whether or not the videos
+            metadata, visual and audio content pertain to the input idea.
+            </div>
+            <div class="grid col-span-full md:grid-cols-8 grid-cols-4">
+                <a class="disabled md:col-start-3 md:col-span-2 text-center col-start-1 col-span-2" href="/projects/cap-curate">Site Coming Soon</a>
+                <a class="md:col-start-5 md:col-span-2 text-center col-start-3 col-span-2" href="https://github.com/ColgateLeoAscenzi/cap-curate-backend">View the Code</a>
+            </div>
+        </div>
+    </div>
+</ConnectedPage>

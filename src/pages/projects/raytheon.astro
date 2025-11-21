@@ -6,12 +6,14 @@ import ConnectedPage from "../../layouts/ConnectedPage.astro";
     <div class="grid col-span-full">
         <img src="https://prd-sc102-cdn.rtx.com/-/media/rtx/news-images/2020/10/13/gtf-engine-making-history-now-and-in-the-future/gtf_worker_engine.png?w=1440&rev=aa3150621b2349a8afe782feb12b269f&hash=6B972002E9387B1C13F782F9CCD9160B" alt="Raytheon image"></img>
         <br/>
-        <div class="pt-2">
+        <div>
+            <div class="pt-2">
             As a software engineer contracted to Raytheon, I work as part of an agile team within a larger ART that
             practices SAFe methodology. The ART as a whole maintains many PLM tools, with a major focus on a custom
             implement of Windchill PDM. My team focuses maintaining parts of Windchill relating to customer deliverable,
             technical data packages. Windchill itself is a large Java SpringBoot app with a JSP frontend meant for managing
             data throughout its lifecycle; including revisions, approvals, release.
+            </div>
             <div class="pt-2">
             While working on this project I've had a hand in touching everything from Jenkins pipelines, to our custom selenium 
             implementation, to creating tables that combine and merge many data sources for efficient consumption by the end users.
@@ -35,7 +37,17 @@ import ConnectedPage from "../../layouts/ConnectedPage.astro";
             reducing documentation, human error, and decreasing installation time from hours to 10 minutes.
             </div>
             <div class="pt-2">
-            As part of
+            Outside of my day to day responsibility, I also led our ARTs internal innovation process, establishing our pre-innovation meeting cadence,
+            demo structure, and creating a process for documenting and sharing ideas that is still used today. This process involves a complaint/solution
+            board, where developers, users and others can submit problems they see in our current processes or tools, and then others can come up with
+            solutions and work them for their innovation. Alternatively, developers can submit ideas they have for new tools or process improvements
+            and have other people collaborate with them to build it out. For one of my innovations, I created a tool embedded in Windchills UI that
+            allows users to quickly create test data in given lifecycle states and structures to save time testing. Oftentimes in Windchill, developers
+            checking eachothers code, or QA testers needing to perform manual regression tests will need to make a lot of test data in different configurations.
+            Windchill is a slow application with lots of repetitive UI steps for creating simple objects, and workflows that need to complete many steps before
+            and object is in the correct state. When using my tool, instead of spending combined hours of tedious, mentally draining clicking, users can fill out one
+            screen and click "Create", and then step away for a few minutes and come back to all their test data ready to go. My solution at first used only objects
+            most relevant to my team, but since it's inception four other teams have adopted and expanded it to include their own object types and workflows.
             </div>
         </div>
     </div>
