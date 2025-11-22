@@ -1,0 +1,13 @@
+export const javascript_tag = {tagname: "JavaScript", tagicon: "/icons/javascript.svg", bgcolor: "#e03838ff"};
+export const typescript_tag = {tagname: "TypeScript", tagicon: "/icons/typescript.svg", bgcolor: "#3D78C0"};
+export const node_tag = {tagname: "NodeJS", tagicon: "/icons/nodedotjs.svg", bgcolor: "#5FA04E"};
+export const react_tag = {tagname: "React", tagicon: "/icons/react.svg", bgcolor: "#77D8F5"};
+export const reactnative_tag = {tagname: "React Native", tagicon: "/icons/react_light.svg", bgcolor: "#171252"};
+export const astro_tag = {tagname: "Astro", tagicon: "/icons/astro.svg", bgcolor: "#171252"};
+export const graphql_tag = {tagname: "GraphQL", tagicon: "/icons/graphql.svg", bgcolor: "#CF3991"};
+export const java_tag = {tagname: "Java", tagicon: "/icons/java.svg", bgcolor: "#3A75B0"};
+export const springboot_tag = {tagname: "Springboot", tagicon: "/icons/springboot.svg", bgcolor: "#ffffff"};
+export const python_tag = {tagname: "Python", tagicon: "/icons/python.svg", bgcolor: "#4280b1"};
+export const postgres_tag = {tagname: "PostgreSQL", tagicon: "/icons/postgresql.svg", bgcolor: "#4269E0"};
+export const docker_tag = {tagname: "Docker", tagicon: "/icons/docker.svg", bgcolor: "#2496ED"};
+export const wordpress_tag = {tagname: "WordPress", tagicon: "/icons/wordpress.svg", bgcolor: "#FFFFFF"};

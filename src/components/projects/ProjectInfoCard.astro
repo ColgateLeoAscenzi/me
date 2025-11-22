@@ -6,11 +6,9 @@ const { title, description, image, imageLink, tags } = Astro.props;
     <a class="mb-2" href={imageLink}><img class="rounded-xl" src={image} alt={title}></img></a>
     <div class="text-lg font-bold text-center">{title}</div>
     <div class="text-md text-center">{description}</div>
-    <div class=`grid grid-cols-${tags.length} justify-items-center`>
-        {tags.map((content) => {
-            return (
-                <Tag tagname={content} />
-            )
+    <div class=`flex flex-row items-center`>
+        {tags.map(({tagname, tagicon, bgcolor}) => {
+            return (<Tag name={tagname} icon={tagicon} color={bgcolor}/>)
         })}
     </div>
 </div>

@@ -6,7 +6,7 @@ location: 'Remote'
 image: 'https://rd4.s3.us-east-1.amazonaws.com/logos/rd4_logo.png'
 imageLink: 'https://www.rd4consulting.com'
 ---
-*Raytheon Windchill Project*
+**[Raytheon Windchill Project](/projects/raytheon)**
 - Architected SpringBoot based general PDF converting/merging solution to replace Adobe product and save hundreds of thousands in yearly license costs.
   - Created features and stories to break up work for team, then handled core development and code review for teammates
   - Conducted vulnerability investigation and delivered report for approval

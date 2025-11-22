@@ -1,0 +1,13 @@
+---
+import Tag from "../tag.astro";
+const {title, description, tags} = Astro.props;
+---
+<div class="grid col-span-full grid-cols-8">
+    <h2 class="col-span-8">{title}</h2>
+    <div class="col-span-8 md:col-span-2">Website</div>
+    <div class="flex flex-row justify-start md:justify-end items-center col-span-8 md:col-start-3 md:col-span-6">
+        {tags.map(({tagname, tagicon, bgcolor}) => {
+            return (<Tag name={tagname} icon={tagicon} color={bgcolor}/>)
+        })}
+    </div>
+</div>

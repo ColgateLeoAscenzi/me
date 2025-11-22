@@ -1,10 +1,13 @@
 ---
+import ProjectHeader from "../../components/projects/ProjectHeader.astro";
+import { react_tag, typescript_tag, wordpress_tag } from "../../data/tags";
 import ConnectedPage from "../../layouts/ConnectedPage.astro";
 
 ---
-<ConnectedPage title="Projects > Contract AI">
+<ConnectedPage>
+    <ProjectHeader title="Contract AI" tags={[wordpress_tag, react_tag, typescript_tag]}/>
     <div class="grid col-span-full">
-        <img src="/project-resources/contract-ai/contract-ai-project-cover.png" alt="Contract AI image"></img>
+        <img src="/project-resources/contract-ai-cover.png" alt="Contract AI image"></img>
         <br>
         <div class="grid pt-2">
             The Contract-AI project was a website redesign I worked on as a Full Stack Software Engineer at Carimus

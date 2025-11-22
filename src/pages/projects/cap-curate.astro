@@ -1,10 +1,13 @@
 ---
+import ProjectHeader from "../../components/projects/ProjectHeader.astro";
+import { python_tag } from "../../data/tags";
 import ConnectedPage from "../../layouts/ConnectedPage.astro";
 
 ---
-<ConnectedPage title="Projects > CapCurate">
+<ConnectedPage>
+    <ProjectHeader title="CapCurate" tags={[python_tag]}/>
     <div class="grid col-span-full">
-        <img src="/project-resources/contract-ai/contract-ai-project-cover.png" alt="CapCurate image"></img>
+        <img src="/project-resources/capcurate-cover.png" alt="CapCurate image"></img>
         <br>
         <div class="grid">
             <div class="pt-2">

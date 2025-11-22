@@ -1,31 +1,32 @@
+import { react_tag, javascript_tag, springboot_tag, typescript_tag, java_tag, python_tag, reactnative_tag, postgres_tag, wordpress_tag } from "./tags.js";
 export const workProjectsData = [
     {
         title: "Raytheon Project",
         description: "Customizing Windchill PDM",
-        image: "https://prd-sc102-cdn.rtx.com/-/media/rtx/news-images/2020/10/13/gtf-engine-making-history-now-and-in-the-future/gtf_worker_engine.png?w=1440&rev=aa3150621b2349a8afe782feb12b269f&hash=6B972002E9387B1C13F782F9CCD9160B",
+        image: "/project-resources/raytheon-cover.png",
         imageLink: "/projects/raytheon",
-        tags: ["Java", "SpringBoot", "PDM"]
+        tags: [java_tag, springboot_tag]
     },
     {
         title: "Contract AI",
         description: "Modern Website Redesign",
-        image: "/project-resources/contract-ai/contract-ai-project-cover.png",
+        image: "/project-resources/contract-ai-cover.png",
         imageLink: "/projects/contract-ai",
-        tags: ["Wordpress", "React", "Typescript"]
+        tags: [wordpress_tag, react_tag, typescript_tag]
     },
     {
         title: "Joulebug",
         description: "Gamified ESG Application",
-        image: "https://dashboard.joulebug.com/static/media/app-mockup.6f2883e2.png",
+        image: "/project-resources/joulebug-cover.png",
         imageLink: "/projects/joulebug",
-        tags: ["React", "React Native"]
+        tags: [react_tag, reactnative_tag]
     },
     {
         title: "MiLuma",
         description: "Puerto Rico Energy Portal",
-        image: "/project-resources/contract-ai/contract-ai-project-cover.png",
+        image: "/project-resources/miluma-cover.png",
         imageLink: "/projects/miluma",
-        tags: ["React", "Java", "SpringBoot"]
+        tags: [react_tag, springboot_tag, postgres_tag]
     },
 ]
 
@@ -33,15 +34,15 @@ export const personalProjectsData = [
     {
         title: "CapCurate",
         description: "AI Powered Video Clip Finder",
-        image: "/project-resources/raider-rumble/raider-rumble-project-cover.png",
+        image: "/project-resources/capcurate-cover.png",
         imageLink: "/projects/cap-curate",
-        tags: ["Python", "Firebase", "Llama CPP"]
+        tags: [python_tag]
     },
     {
         title: "Raider Rumble",
         description: "ThreeJS Web Game - Colgate University",
-        image: "/project-resources/raider-rumble/raider-rumble-project-cover.png",
+        image: "/project-resources/raider-rumble-cover.png",
         imageLink: "/projects/raider-rumble-game",
-        tags: ["ThreeJS", "JQuery"]
+        tags: [javascript_tag]
     },
 ]

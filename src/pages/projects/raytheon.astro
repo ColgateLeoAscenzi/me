@@ -1,10 +1,13 @@
 ---
+import ProjectHeader from "../../components/projects/ProjectHeader.astro";
+import { java_tag, springboot_tag } from "../../data/tags";
 import ConnectedPage from "../../layouts/ConnectedPage.astro";
 
 ---
-<ConnectedPage title="Projects > Raytheon">
+<ConnectedPage>
+    <ProjectHeader title="Raytheon Windchill" tags={[java_tag, springboot_tag]}/>
     <div class="grid col-span-full">
-        <img src="https://prd-sc102-cdn.rtx.com/-/media/rtx/news-images/2020/10/13/gtf-engine-making-history-now-and-in-the-future/gtf_worker_engine.png?w=1440&rev=aa3150621b2349a8afe782feb12b269f&hash=6B972002E9387B1C13F782F9CCD9160B" alt="Raytheon image"></img>
+        <img src="/project-resources/raytheon-cover.png" alt="Raytheon image"></img>
         <br/>
         <div>
             <div class="pt-2">

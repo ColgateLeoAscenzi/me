@@ -1,10 +1,13 @@
 ---
+import ProjectHeader from "../../components/projects/ProjectHeader.astro";
+import {javascript_tag } from "../../data/tags";
 import ConnectedPage from "../../layouts/ConnectedPage.astro";
 
 ---
-<ConnectedPage title="Projects > Raider Rumble">
+<ConnectedPage>
+    <ProjectHeader title="Raider Rumble" tags={[javascript_tag]}/>
     <div class="grid col-span-full">
-        <img src="/project-resources/raider-rumble/raider-rumble-project-cover.png" alt="Raider Rumble image"></img>
+        <img src="/project-resources/raider-rumble-cover.png" alt="Raider Rumble image"></img>
         <br/>
         <div class="pt-2">
             <span text-bold>Raider Rumble</span> is a Super Smash Brothers inspired 2.5D fighting game created as

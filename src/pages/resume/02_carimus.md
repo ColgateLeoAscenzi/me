@@ -18,7 +18,7 @@ imageLink: 'https://www.carimus.com'
 - Developed features in React Native for Android/IOS mobile environments.
 - Created analytics web dashboard allowing admin users to track statistics and generate reports
 
-**[MiLuma](/projects/mi-luma)**  - Puerto Rico’s Energy Portal https://miluma.lumapr.com/login
+**[MiLuma](/projects/miluma)**  - Puerto Rico’s Energy Portal https://miluma.lumapr.com/login
 - Built email/sms Java Springboot microservices to support 2FA and enable communication between users and support representatives via forms
 - Created login/sign-up flow, integrating with account, auth services and legacy db
 - Implemented Formik templates for various customer use cases

@@ -1,13 +1,14 @@
 ---
-const {tagname} = Astro.props;
+const {name, icon, color} = Astro.props;
+const dynamicColor = color;
 ---
+<style define:vars={{ dynamicColor }}>
+  .dynamic-bg {
+    background-color: var(--dynamicColor);
+  }
+</style>
 
-<div class="text-sm 
-            text-white 
-            bg-violet-400 
-            px-2 m-1 
-            max-w-fit 
-            max-h-5 
-            rounded-sm">
-    {tagname}
+<div class="flex flex-column max-h-5 min-w-fit rounded-md border-solid border-2 border-gray-200 bg-gray-100 overflow-hidden p-0 m-0.5">
+    <img src={icon} alt={name + " icon"} class="flex dynamic-bg h-4 p-0.5"></img>
+    <div class="flex text-end text-xs items-center px-1">{name}</div>
 </div>
