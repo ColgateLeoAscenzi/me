@@ -1,11 +1,12 @@
 ---
 import ProjectHeader from "../../components/projects/ProjectHeader.astro";
-import { react_tag, typescript_tag, wordpress_tag } from "../../data/tags";
+import { workProjectsData } from "../../data/projects_pagedata";
 import ConnectedPage from "../../layouts/ConnectedPage.astro";
 
+const projectData = workProjectsData["contract-ai"];
 ---
 <ConnectedPage>
-    <ProjectHeader title="Contract AI" tags={[wordpress_tag, react_tag, typescript_tag]}/>
+    <ProjectHeader title="Contract AI" {...projectData}/>
     <div class="grid col-span-full">
         <img src="/project-resources/contract-ai-cover.png" alt="Contract AI image"></img>
         <br>

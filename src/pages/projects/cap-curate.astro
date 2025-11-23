@@ -1,11 +1,12 @@
 ---
 import ProjectHeader from "../../components/projects/ProjectHeader.astro";
-import { python_tag } from "../../data/tags";
+import { personalProjectsData } from "../../data/projects_pagedata";
 import ConnectedPage from "../../layouts/ConnectedPage.astro";
 
+const projectData = personalProjectsData["cap-curate"];
 ---
 <ConnectedPage>
-    <ProjectHeader title="CapCurate" tags={[python_tag]}/>
+    <ProjectHeader title="CapCurate" {...projectData}/>
     <div class="grid col-span-full">
         <img src="/project-resources/capcurate-cover.png" alt="CapCurate image"></img>
         <br>

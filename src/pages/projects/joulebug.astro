@@ -1,11 +1,12 @@
 ---
 import ProjectHeader from "../../components/projects/ProjectHeader.astro";
-import { react_tag, reactnative_tag } from "../../data/tags";
+import { workProjectsData } from "../../data/projects_pagedata";
 import ConnectedPage from "../../layouts/ConnectedPage.astro";
 
+const projectData = workProjectsData["joulebug"];
 ---
 <ConnectedPage>
-    <ProjectHeader title="Joulebug" tags={[react_tag, reactnative_tag]}/>
+    <ProjectHeader title="Joulebug" {...projectData}/>
     <div class="grid col-span-full">
         <img src="/project-resources/joulebug-cover.png" alt="Joulebug image"></img>
         <br>

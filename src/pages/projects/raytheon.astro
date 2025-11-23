@@ -1,13 +1,14 @@
 ---
 import ProjectHeader from "../../components/projects/ProjectHeader.astro";
-import { java_tag, springboot_tag } from "../../data/tags";
+import { workProjectsData } from "../../data/projects_pagedata";
 import ConnectedPage from "../../layouts/ConnectedPage.astro";
 
+const projectData = workProjectsData["raytheon-project"];
 ---
 <ConnectedPage>
-    <ProjectHeader title="Raytheon Windchill" tags={[java_tag, springboot_tag]}/>
+    <ProjectHeader title="Raytheon Windchill" {...projectData}/>
     <div class="grid col-span-full">
-        <img src="/project-resources/raytheon-cover.png" alt="Raytheon image"></img>
+        <img src={projectData.image} alt="Raytheon image"></img>
         <br/>
         <div>
             <div class="pt-2">

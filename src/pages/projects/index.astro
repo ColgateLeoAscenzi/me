@@ -1,19 +1,21 @@
 ---
 import ConnectedPage from "../../layouts/ConnectedPage.astro";
-import {personalProjectsData, workProjectsData} from "../../data/projects_pagedata";
+import {personalProjectKeys, personalProjectsData, workProjectKeys, workProjectsData} from "../../data/projects_pagedata";
 import ProjectInfoCard from "../../components/projects/ProjectInfoCard.astro";
 ---
 <ConnectedPage title="Projects">
     <div class="grid col-span-full overflow-hidden">
         <h2 class="mt-4 text-xl">Work Projects</h2>
         <div class="grid col-span-full my-3 md:grid-cols-2">
-            {workProjectsData.map((props) => {
+            {workProjectKeys.map((key) => {
+                const props = workProjectsData[key];
                 return (<ProjectInfoCard {...props}/>)
             })}
         </div>
         <h2 class="text-xl">Personal Projects</h2>
         <div class="grid col-span-full my-3 md:grid-cols-2">
-            {personalProjectsData.map((props) => {
+            {personalProjectKeys.map((key) => {
+                const props = personalProjectsData[key];
                 return (<ProjectInfoCard {...props}/>)
             })}
         </div>
